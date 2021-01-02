@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/header_text_exp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:text="   Add expenses"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/tV7"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="10dp"
+        android:text="Title" />
+
+    <EditText
+        android:id="@+id/title_eText_exp"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/tV6"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="10dp"
+        android:text="Expenses" />
+
+    <EditText
+        android:id="@+id/expense_eText"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/tV4"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="10dp"
+        android:text="Category" />
+
+    <Spinner
+        android:id="@+id/category_CB_EXP"
+        android:layout_width="307dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:id="@+id/date_picker_exp"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="30dp"
+        android:hint="Select Date"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:textColorHint="@color/colorWhite"
+        android:layout_weight="0.15"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btn_add_exp_DB"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="add expenses"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+</ScrollView>

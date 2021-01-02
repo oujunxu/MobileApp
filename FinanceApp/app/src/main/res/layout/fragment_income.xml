@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oujunandersxu.financeapp.Fragments.Income"
+    android:background="@color/colorWhite"
+    android:fillViewport="true"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">>
+        <Button
+            android:id="@+id/btn_add_income"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_states"
+            android:text="+"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="  Income"
+            android:textColor="@android:color/white"
+            android:textSize="27dp"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btn_get_between"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FIND" />
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reset" />
+
+                <TextView
+                    android:id="@+id/date_from_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_weight="0.39"
+                    android:text="       FROM" />
+
+                <TextView
+                    android:id="@+id/date_to_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="0.26"
+                    android:text="          TO" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView_inc_hist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:fitsSystemWindows="true"
+                android:nestedScrollingEnabled="true" />
+
+        </LinearLayout>
+</FrameLayout>
+</ScrollView>
